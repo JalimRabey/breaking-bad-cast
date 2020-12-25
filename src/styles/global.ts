@@ -8,8 +8,13 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors.backgroundColor};
-    color: ${({ theme }) => theme.colors.text};
     font: 400 14px 'Open Sans', sans-serif;
+    color: ${({ theme }) => theme.colors.text};
+    background-image: url('/assets/images/background.jpg');
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `;
